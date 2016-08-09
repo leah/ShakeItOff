@@ -160,10 +160,10 @@ print("Our squad goal is \(total) pushups.")
 // Our squad goal is 100 pushups.
 
 // isEmpty
-if squad.isEmpty {
-    print("No way, my squad is never empty.")
+if squadPushupGoals.isEmpty {
+    print("No way, my squad always has goals.")
 } else {
-    print("Party time! 🎉")
+    print("Go! 🎉")
 }
 
 // Classes
