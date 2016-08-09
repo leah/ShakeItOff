@@ -117,13 +117,13 @@ let exes: Set<String> = [
 // ... obviously not a complete set
 
 // Dictionary
-var squad: [String: String] = [
-    "Karlie Kloss": "model",
-    "Selena Gomez": "actress",
-    "Gigi Hadid": "model",
-    "Lena Dunham": "director",
-    "Hailee Steinfeld": "actress",
-    "Ed Sheeran": "musician"
+var squadPushupGoals: [String: Int] = [
+    "Karlie Kloss": 17,
+    "Selena Gomez": 12,
+    "Gigi Hadid": 16,
+    "Lena Dunham": 25,
+    "Hailee Steinfeld": 20,
+    "Ed Sheeran": 10
 ]
 // ... obviously not a complete dictionary
 
@@ -141,15 +141,23 @@ for ex in exes {
  My ex Taylor Lautner is lame. */
 
 // Looping over a dictionary
-for (bff, job) in squad {
-    print("\(bff) is a \(job).")
+for (bff, goal) in squadPushupGoals {
+    print("\(bff)'s pushup goal is \(goal).")
 }
-/* Lena Dunham is a director.
- Ed Sheeran is a musician.
- Karlie Kloss is a model.
- Selena Gomez is a actress.
- Gigi Hadid is a model.
- Hailee Steinfeld is a actress. */
+/* Lena Dunham's pushup goal is 25.
+ Ed Sheeran's pushup goal is 10.
+ Karlie Kloss's pushup goal is 17.
+ Selena Gomez's pushup goal is 12.
+ Gigi Hadid's pushup goal is 16.
+ Hailee Steinfeld's pushup goal is 20. */
+
+// Looping over values
+var total = 0
+for goal in squadPushupGoals.values {
+    total += goal
+}
+print("Our squad goal is \(total) pushups.")
+// Our squad goal is 100 pushups.
 
 // isEmpty
 if squad.isEmpty {
